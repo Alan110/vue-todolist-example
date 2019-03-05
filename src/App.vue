@@ -1,8 +1,8 @@
 <template>
   <div>
-    <TodoList v-bind:todos="todos" />
+    <TodoList :todos="todos" />
     <!-- <CreateTodo v-on:add-todo="addTodo" /> -->
-    <CreateTodo v-on:create-todo="addTodo" />
+    <CreateTodo @create-todo="addTodo" />
   </div>
 </template>
 
